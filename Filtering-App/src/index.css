@@ -1,0 +1,110 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Main Layout */
+main {
+  min-height: 100vh;
+  background: #f4f6f8;
+  padding: 40px 20px;
+}
+
+/* Heading */
+.heading-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Filter Section */
+.filter-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Input field (TextField component) */
+.input-container input {
+  padding: 10px 12px;
+  width: 220px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+.input-container input:focus {
+  border-color: #4f46e5;
+}
+
+/* Button (Button component) */
+.input-container button {
+  padding: 10px 16px;
+  background-color: #4f46e5;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.input-container button:hover {
+  background-color: #4338ca;
+}
+
+/* ========================= */
+/* Static Cards Section */
+/* ========================= */
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  color: #222;
+  margin-bottom: 6px;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.card-img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
